@@ -1,2 +1,2 @@
 # bash-scripte
-Kleine Sammlung von Bash Scripten
+Eine kleine Sammlung von Bash Scripten 

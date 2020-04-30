@@ -30,5 +30,5 @@
 # Build Verzeichnis
 build*/
 
-# Text Backup Dateien
+# Text Backup Dateien 
 *.*~

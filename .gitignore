@@ -1,0 +1,34 @@
+# kompilierte Objekt Dateien
+*.slo
+*.lo
+*.o
+*.obj
+
+# vorkompilierte Headers
+*.gch
+*.pch
+
+# Komplierte Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module Dateien
+*.mod
+
+# komplierte statische libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Ausführbares
+*.exe
+*.out
+*.app
+
+# Build Verzeichnis
+build*/
+
+# Text Backup Dateien
+*.*~

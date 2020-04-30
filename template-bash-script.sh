@@ -1,5 +1,5 @@
 #!/bin/bash
-# Skript: skript.sh
+# Skript: template-bash-script.sh
 # Zweck: Basistemplate für eigene Skripte, enthaelt bereits
 # einige Skript-Standardelemente (usage-Funktion,
 # Optionen parsen mittels getopts, vordefinierte Variablen...)

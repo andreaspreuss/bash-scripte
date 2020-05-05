@@ -1,0 +1,51 @@
+#  GITIGNORE TEMPLATE #
+# Kompilierte Quellen #
+#######################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packetarchive #
+#################
+# git hat seine eigenen eingebauten Kompressionsmethoden
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Protokolle und Datenbanken #
+##############################
+*.log
+*.sql
+*.sqlite
+*.bkp
+
+# unerwuenschte generierte Dateien #
+####################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# Programm-Konfigs & Backups #
+##############################
+*.sublime-workspace
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+*.ppk

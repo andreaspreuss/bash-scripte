@@ -1,34 +1,61 @@
-# kompilierte Objekt Dateien
-*.slo
-*.lo
+# Kompilierte Quellen #
+#######################
+*.com
+*.class
+*.dll
+*.exe
 *.o
-*.obj
-
-# vorkompilierte Headers
-*.gch
-*.pch
-
-# Komplierte Dynamic libraries
 *.so
 *.dylib
-*.dll
-
-# Fortran module Dateien
-*.mod
-
-# komplierte statische libraries
+*.out
+*.app
 *.lai
 *.la
 *.a
 *.lib
+*.gch
+*.pch
 
-# Ausführbares
-*.exe
-*.out
-*.app
+# Packetarchive #
+#################
+# git hat seine eigenen eingebauten Kompressionsmethoden
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# Build Verzeichnis
-build*/
 
-# Text Backup Dateien 
+# Protokolle und Datenbanken #
+##############################
+*.log
+*.sql
+*.sqlite
+*.bkp
+
+# unerwuenschte generierte Dateien #
+####################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# Programm-Konfigs & Backups #
+##############################
+*.sublime-workspace
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+*.ppk
 *.*~

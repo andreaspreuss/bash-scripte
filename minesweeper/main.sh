@@ -1,6 +1,6 @@
 #!/bin/bash
 # Minesweeper
-# Minesweeper ist ein simples Pezzlespiel, das dem Betriebssystem Microsoft Windows bis einschließlich 
+# Minesweeper ist ein simples Puzzlespiel, das dem Betriebssystem Microsoft Windows bis einschließlich 
 # der Version Windows 7 beigelegt wurde, bei dem der Spieler durch eine Kombination 
 # aus logischem Denken und zufälligem Raten herausfinden soll, unter welchen Feldern Minen 
 # versteckt sind. Hier einmal eine Version für die Linux Konsole.

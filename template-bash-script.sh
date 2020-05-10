@@ -1,10 +1,9 @@
 #!/bin/bash
 # Skript: template-bash-script.sh
-# Zweck: Basistemplate für eigene Skripte, enthaelt bereits
-# einige Skript-Standardelemente (usage-Funktion,
-# Optionen parsen mittels getopts, vordefinierte Variablen...)
+# Zweck: Basistemplate für eigene Skripte, enthaelt bereits Skript-Standardelemente 
+# (usage-Funktion, Optionen parsen mittels getopts, vordefinierte Variablen...)
 # Diese Datei ist unter der Commons Attribution-Share Alike Lizenz veröffentlicht.
-# Shellskript-Template von Jochen Gruse pro-linux.de
+# Shellskript-Template ursprünglich von Jochen Gruse pro-linux.de
 # 
 # Globale Variablen
 # Es lohnt sich immer, globale Variable am Anfang eines Skriptes zusammenzufassen und dort 
@@ -12,6 +11,7 @@
 # kann in Fehlermeldungen oder Statusmeldungen weiterverwendet werden. Aussagekräftige Namen 
 # für Exitcodes, die im Erfolgs-, Misserfolgs-, Fehler- oder Skriptfehlerfall an den auf-
 # rufenden Prozess zurückgegeben werden, machen den Abbruchcharakter im späteren Skript deutlich.
+# 
 
 SCRIPTNAME=$(basename $0 .sh)
 EXIT_SUCCESS=0
@@ -47,7 +47,10 @@ function usage {
 # ls -l -a, ls -la und ls -al sind gleichwertig! Damit diese Funktionalität nicht immer wieder 
 # (meist fehlerhaft oder nur eingeschränkt ) neu implementiert werden muss, gibt es die 
 # getopts-Funktion.
-# Das erste Argument zu getopts ist eine Zeichenkette, welche die erlaubten Optionen definiert. In unserem Beispiel sind das die Optionen o, h und v. Da auf den Buchstaben o ein Doppelpunkt folgt, wird für -o ein Optionsargument erwartet. Der erste Doppelpunkt weist getopts an, keine eigenen Fehlermeldungen auszugeben, damit wir ungestört unsere eigenen Meldungen ausgeben können.
+# Das erste Argument zu getopts ist eine Zeichenkette, welche die erlaubten Optionen definiert. 
+# In unserem Beispiel sind das die Optionen o, h und v. Da auf den Buchstaben o ein Doppelpunkt 
+# folgt, wird für -o ein Optionsargument erwartet. Der erste Doppelpunkt weist getopts an, 
+# keine eigenen Fehlermeldungen auszugeben, damit wir ungestört unsere eigenen Meldungen ausgeben können.
 # Das zweite Argument zu getopts ist der Name der Variablen, die mit der erkannten Option 
 # gefüllt werden soll. Ein eventuelles Optionsargument findet man in der Variablen OPTARG.
 # Fehlerfälle wie unbekannte Optionen und fehlende Optionsargumente sind bereits abgehandelt. 
@@ -96,7 +99,10 @@ if (( $# < 1 )) ; then
 fi
 
 # Schleife über alle Argumente
-# Ein Skript sollte, wenn es sinnvoll ist, immer mehrere Argumente bei einem Aufruf abarbeiten können. Daher enthält die Schablone eine Beispielschleife, die über alle übergebenen Argumente läuft. Die Variante for VAR ; do ; done ist nicht destruktiv und macht auch bei Argumenten, die Leerzeichen enthalten, keine Probleme.
+# Ein Skript sollte, wenn es sinnvoll ist, immer mehrere Argumente bei einem Aufruf 
+# abarbeiten können. Daher enthält die Schablone eine Beispielschleife, die über alle 
+# übergebenen Argumente läuft. Die Variante for VAR ; do ; done ist nicht destruktiv 
+# und macht auch bei Argumenten, die Leerzeichen enthalten, keine Probleme.
 # Natürlich ist der Inhalt der Schleife in diesem Skript überflüssig, 
 # da genau hier der eigentliche Inhalt eingefügt werden soll. 
 # So kann man das Skript aber starten, um sich von der Lauffähigkeit zu überzeugen, 
